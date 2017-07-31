@@ -1,0 +1,12 @@
+<md-toolbar class="mat-primary">
+  <h3 [style.color]="'white'">ADMIN PORTAL</h3>
+  <span class="example-spacer"></span>
+  <span [hidden]="!loggedIn"><a md-button>View BookList</a></span>
+  <span [hidden]="!loggedIn"><a md-button>Add Book</a></span>
+  <span [hidden]="!loggedIn"><a md-button>LogOut</a></span>
+
+</md-toolbar>
+
+<button md-raised-button class="mat-primary" (click)="toggleDisplay()">Toggle</button>
+
+
